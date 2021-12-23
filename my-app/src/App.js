@@ -5,7 +5,10 @@ import { ReactComponent as Location } from './icons/location.svg'
 import { ReactComponent as Party } from './icons/mug.svg'
 import { ReactComponent as Postbox } from './icons/postbox.svg'
 import { CSSTransition } from 'react-transition-group'
-import Profilepage from './pages/Profilepage'
+//import Profilepage from './pages/Profilepage'
+
+//import { useNavigate } from 'react-router-dom'
+
 
 function App() {
   return (
