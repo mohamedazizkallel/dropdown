@@ -3,7 +3,7 @@ import { useHistory } from 'react-router-dom'
 
 function Profilepage() {
   let history = useHistory()
-  history.push('/App')
+
   return (
     <div>
       <input type='text' placeholder='username' />
@@ -20,4 +20,4 @@ function Profilepage() {
     </div>
   )
 }
-export default Profile
+export default Profilepage
