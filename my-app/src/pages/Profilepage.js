@@ -1,8 +1,8 @@
 import React from 'react'
-//import { useNavigate } from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 
 function Profilepage() {
-  return (
+  return (  
     <div class='form-container'>
       <form class='register-form'>
         <input
@@ -35,9 +35,8 @@ function Profilepage() {
           placeholder='Type of user'
           name='Type of user'
         />
-
         <button class='form-field' type='submit'>
-          <a href='./pages/cards'>Register</a>
+          Register
         </button>
       </form>
     </div>
