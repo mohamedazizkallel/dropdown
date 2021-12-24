@@ -6,21 +6,46 @@ import { ReactComponent as Party } from './icons/mug.svg'
 import { ReactComponent as Postbox } from './icons/postbox.svg'
 import { CSSTransition } from 'react-transition-group'
 //import Profilepage from './pages/Profilepage'
-
+import Card from './pages/cards'
 //import { useNavigate } from 'react-router-dom'
-
 
 function App() {
   return (
-    <Navbar>
-      <NavItem icon={<Profile />}>
-        <Dropdownmenu />
-      </NavItem>
-      <NavItem icon={<Label />} />
-      <NavItem icon={<Location />} />
-      <NavItem icon={<Party />} />
-      <NavItem icon={<Postbox />} />
-    </Navbar>
+    <>
+      <Navbar>
+        <NavItem icon={<Profile />}>
+          <Dropdownmenu />
+        </NavItem>
+        <NavItem icon={<Label />}>
+          <Dropdownmenu />
+        </NavItem>
+        <NavItem icon={<Location />} />
+        <NavItem icon={<Party />} />
+        <NavItem icon={<Postbox />} />
+      </Navbar>
+      <div className='container'>
+        <div className='row'>
+          <Card
+            title='event A'
+            images='./pages/images/event.jpg'
+            old_price='9,999'
+            newPrice='99'
+            rupess='$'
+            alt='event'
+            exp_date='25-10-2020'
+          />
+          <Card
+            title='event B'
+            images='./pages/images/event.jpg'
+            old_price='20'
+            newPrice='10'
+            rupess='$'
+            alt='event'
+            exp_date='25-10-2020'
+          />
+        </div>
+      </div>
+    </>
   )
 }
 function Dropdownmenu() {
@@ -70,11 +95,15 @@ function Dropdownmenu() {
       >
         <div className='menu'>
           <DropdownItem goToMenu='main'>MY profile</DropdownItem>
-          <DropdownItem leftIcon='😆' rightIcon='😇'></DropdownItem>
-          <DropdownItem leftIcon='😆' rightIcon='😇'></DropdownItem>
-          <DropdownItem leftIcon='😆' rightIcon='😇'></DropdownItem>
-          <DropdownItem leftIcon='😆' rightIcon='😇'></DropdownItem>
-          <DropdownItem leftIcon='😆' rightIcon='😇'></DropdownItem>
+          <DropdownItem leftIcon='😆' rightIcon='😇'>
+            placeholder
+          </DropdownItem>
+          <DropdownItem leftIcon='😆' rightIcon='😏'>
+            placeholder
+          </DropdownItem>
+          <DropdownItem leftIcon='😏' rightIcon='😇'>
+            placeholder
+          </DropdownItem>
         </div>
       </CSSTransition>
     </div>

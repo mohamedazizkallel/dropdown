@@ -124,6 +124,7 @@ a {
 }
 
 .menu-secondary-enter {
+ 
   transform: translateX(110%);
 }
 .menu-secondary-enter-active {
@@ -131,6 +132,7 @@ a {
   transition: all var(--speed) ease;
 }
 .menu-secondary-exit {
+  
 }
 .menu-secondary-exit-active {
   transform: translateX(110%);

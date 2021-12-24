@@ -47,21 +47,5 @@ function Card(props) {
   )
 }
 
-function CardPre() {
-  return (
-    <div className='container'>
-      <div className='row'>
-        <Card
-          title='What is Lorem Ipsum?'
-          images='./pages/images/event.png'
-          old_price='9,999'
-          newPrice='9999'
-          rupess='$'
-          alt='event'
-          exp_date='25-10-2020'
-        />
-      </div>
-    </div>
-  )
-}
+
 export default Card
